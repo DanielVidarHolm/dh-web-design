@@ -1,0 +1,105 @@
+/* Media qearies: 0-600, 600-800, 800-1000, 1000-1400, 1400-9999 */
+/* media quaries height : breaks at 0-600 */
+
+
+/* Basic styles */
+html{
+    padding: 0;
+    margin: 0;
+    font-size:62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+main{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    margin:0;
+}
+.full-container{
+    height: 100vh;
+    width: 100vw;
+}
+/* Nav Bar */
+
+.nav{
+    position:fixed;
+    z-index:100;
+    width:100%;
+}
+    .nav > .navbar{
+        list-style:none;
+
+        display:flex;
+        justify-content:center;
+    }
+        .nav > .navbar > .nav-item{
+            padding: 1rem 1rem
+        }
+
+/* Header Section */
+
+#header{
+    position:relative;
+}
+    #header > .inner{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:0 5rem 0 5rem;
+        background-color:rgba(0, 0, 0, 0.5)
+        
+        
+    }
+        
+            #header > .inner > .text-content > h1 {
+                
+                font-size: 6rem;
+                color: white;
+            }
+            #header > .inner > .text-content > a{
+            
+            }
+            #header > .inner > .img-container > img{
+                width:20rem;
+            }
+.header-video{
+    object-fit: cover;
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+}
+
+/* Buttons  */
+
+.button {
+    padding:1rem 2rem;
+    font-size:2rem;
+    border-radius: 5px;
+    background: rgba(92, 225, 230, 0.5);
+    display: inline-block
+ 
+}
+
+.blue {
+    background-color:blue;
+}
+.green {
+    background-color:green;
+}
+.red {
+    background-color:red;
+}

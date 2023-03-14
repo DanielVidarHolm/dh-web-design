@@ -15,6 +15,7 @@ body{
     overflow-x: hidden;
     
 }
+
 main{
     padding: 0;
     margin: 0;
@@ -27,13 +28,18 @@ h1{
     width: 100vw;
 }
 /* Nav Bar */
+#header-nav{
+    position:fixed;
+    z-index:100;
+    width:100%;
+}
 .nav-mob{
 
     
     display:none;
     color:white;
     font-size:3.2rem;
-    padding-right:2rem;
+    
     text-align:end;
     width:100%;
     vertical-align:middle;
@@ -44,17 +50,19 @@ h1{
     .nav-mob > i{
 
         padding:0.5rem 1rem;
-        transform:translate(0.5rem,-0.5rem);
+       
         cursor:pointer;
         
     }
 
 .nav{
-    position:fixed;
+    
     display:flex;
     padding:1rem 1rem;
-    z-index:100;
-    width:100%;
+    
+    width:auto;
+    justify-content: space-between;
+    align-items: center;
 }
     .nav > h1 {
         color:white;
@@ -65,11 +73,20 @@ h1{
         list-style:none;
 
         display:flex;
-        justify-content:center;
+        
+        
+
     }
         .nav > .navbar > .nav-item{
-            padding: 1rem 1rem
+            padding: 1rem 1rem;
+
         }
+            .nav > .navbar > .nav-item > a{
+                font-size:1.6rem;
+                color:white;
+                text-decoration: none;
+            }
+
 
 @media only screen and (max-width:600px) {
     
@@ -104,6 +121,9 @@ h1{
     }
     .nav > .navbar{
         display:flex;
+    }
+    .nav > h1{
+        width:auto;
     }
 }
 /* Header Section */

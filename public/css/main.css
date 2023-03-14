@@ -1,4 +1,4 @@
-/* Media qearies: 0-600, 600-800, 800-1000, 1000-1400, 1400-9999 */
+/* Media qearies: 0-600, 600-800, 800-1000, 1000-1500, 1500-9999 */
 /* media quaries height : breaks at 0-600 */
 
 
@@ -27,12 +27,40 @@ h1{
     width: 100vw;
 }
 /* Nav Bar */
+.nav-mob{
+
+    
+    display:none;
+    color:white;
+    font-size:3.2rem;
+    padding-right:2rem;
+    text-align:end;
+    width:100%;
+    vertical-align:middle;
+    
+
+    
+}
+    .nav-mob > i{
+
+        padding:0.5rem 1rem;
+        transform:translate(0.5rem,-0.5rem);
+        cursor:pointer;
+        
+    }
 
 .nav{
     position:fixed;
+    display:flex;
+    padding:1rem 1rem;
     z-index:100;
     width:100%;
 }
+    .nav > h1 {
+        color:white;
+        font-size:3rem;
+        width:100%;
+    }
     .nav > .navbar{
         list-style:none;
 
@@ -43,10 +71,46 @@ h1{
             padding: 1rem 1rem
         }
 
+@media only screen and (max-width:600px) {
+    
+    .nav > .navbar{
+        display:none;
+    }
+    .nav > h1 {
+        
+        font-size:3rem;
+        width:100%;
+    }
+    .nav > .nav-mob{
+        display:inline-block;
+    }
+}
+@media only screen and (min-width:600px) {
+    .nav > .navbar{
+        display:none;
+    }
+    .nav > h1 {
+        
+        font-size:3rem;
+        width:100%;
+    }
+    .nav > .nav-mob{
+        display:inline-block;
+    }
+}
+@media only screen and (min-width:992px) {
+    .nav > .nav-mob{
+        display:none;  
+    }
+    .nav > .navbar{
+        display:flex;
+    }
+}
 /* Header Section */
 
 #header{
     position:relative;
+    background-color:rgba(0, 0, 0, 0.3)
 }
     #header > .inner{
         display:flex;
@@ -57,19 +121,23 @@ h1{
         left:50%;
         transform:translate(-50%,-50%);
         padding:0 5rem 0 5rem;
-        background-color:rgba(0, 0, 0, 0.5)
+        width:100%;
+        
         
         
     }
-        
+        #header > .inner > .text-content{
+            text-align:end;
+        }
+        #header > .inner > .text-content > .button-group{
+           justify-content:flex-end;
+        }
             #header > .inner > .text-content > h1 {
                 
                 font-size: 6rem;
                 color: white;
             }
-            #header > .inner > .text-content > a{
             
-            }
             #header > .inner > .img-container > img{
                 width:20rem;
             }
@@ -81,17 +149,51 @@ h1{
     top: 0;
     left: 0;
     z-index:-1;
+    
+}
+
+@media only screen and (max-width:600px) {
+    #header > .inner > .text-content > h1 {         
+        font-size: 4rem;
+    }
+}
+@media only screen and (min-width:600px) {
+    #header > .inner > .text-content > h1 {         
+        font-size: 5rem;
+    }
+}
+@media only screen and (min-width:768px) {
+    
+}
+@media only screen and (min-width:992px) {
+    
+}
+@media only screen and (min-width:1200px) {
+    #header > .inner > .text-content > h1 {         
+        font-size: 6rem;
+    }
 }
 
 /* Buttons  */
-
+.button-group{
+    display:flex;
+    gap:0.5rem;
+}
 .button {
     padding:1rem 2rem;
     font-size:2rem;
     border-radius: 5px;
-    background: rgba(92, 225, 230, 0.5);
-    display: inline-block
+    background: rgb(228, 82, 82);
+    text-decoration: none;
+    color:white;
  
+}
+
+@media only screen and (max-width:600px) {
+   .button{
+        font-size:1.6rem;
+        padding:0.8rem 1.6rem;
+   }
 }
 
 .blue {

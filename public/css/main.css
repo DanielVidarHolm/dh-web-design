@@ -27,6 +27,9 @@ h1{
     height: 100vh;
     width: 100vw;
 }
+ul {
+    padding-inline-start: 0;
+}
 /* Nav Bar */
 #header-nav{
     position:fixed;
@@ -91,8 +94,15 @@ h1{
 
 @media only screen and (max-width:991px){
     .nav > .navbar{
-        display:none;
+
         position:absolute;
+        background-color:rgba(0, 0, 0, 0.5);
+        top:4rem;
+        width:100%;
+        overflow:hidden;
+        text-align:center;
+        height:0;
+        transition: height 0.5s ease-in-out;
     }
     .nav > h1 {
         font-size:3rem;
@@ -101,10 +111,9 @@ h1{
     .nav > .nav-mob{
         display:inline-block;
     }
-    #navtarget.show{
-        display:block;
-    }
-
+    
+   
+    
 }
 @media only screen and (min-width:992px) {
     .nav > .nav-mob{
@@ -112,6 +121,7 @@ h1{
     }
     .nav > .navbar{
         display:flex;
+        height:0 !important;
     }
   
     .nav > h1{

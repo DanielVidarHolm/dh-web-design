@@ -71,8 +71,8 @@ h1{
     }
     .nav > .navbar{
         list-style:none;
+        position:relative;
 
-        display:flex;
         
         
 
@@ -88,40 +88,29 @@ h1{
             }
 
 
-@media only screen and (max-width:600px) {
-    
+
+@media only screen and (max-width:991px){
     .nav > .navbar{
         display:none;
+        position:absolute;
     }
     .nav > h1 {
-        
         font-size:3rem;
         width:100%;
     }
     .nav > .nav-mob{
         display:inline-block;
     }
-}
-@media only screen and (min-width:600px) {
-    .nav > .navbar{
-        display:none;
-    }
-    .nav > h1 {
-        
-        font-size:3rem;
-        width:100%;
-    }
-    .nav > .nav-mob{
-        display:inline-block;
-    }
+
 }
 @media only screen and (min-width:992px) {
     .nav > .nav-mob{
         display:none;  
     }
     .nav > .navbar{
-        display:flex;
+        display:flex  !important;
     }
+  
     .nav > h1{
         width:auto;
     }
@@ -215,6 +204,14 @@ h1{
         padding:0.8rem 1.6rem;
    }
 }
+
+.invisible{
+    display:none;
+}
+.flex{
+    display:flex;
+}
+
 
 .blue {
     background-color:blue;

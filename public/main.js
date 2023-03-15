@@ -1,3 +1,5 @@
+
+// Accordiom funtion on the nav menu
 document.querySelector('#hamburger').addEventListener('click', ()=>{
     if (document.querySelector('#navtarget').offsetHeight > 0 ){
         document.querySelector('#navtarget').style.height = 0 +"px"

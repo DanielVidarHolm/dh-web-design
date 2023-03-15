@@ -101,6 +101,9 @@ h1{
     .nav > .nav-mob{
         display:inline-block;
     }
+    #navtarget.show{
+        display:block;
+    }
 
 }
 @media only screen and (min-width:992px) {
@@ -108,11 +111,14 @@ h1{
         display:none;  
     }
     .nav > .navbar{
-        display:flex  !important;
+        display:flex;
     }
   
     .nav > h1{
         width:auto;
+    }
+    #navtarget.show{
+        display:flex;
     }
 }
 /* Header Section */
@@ -208,9 +214,7 @@ h1{
 .invisible{
     display:none;
 }
-.flex{
-    display:flex;
-}
+
 
 
 .blue {

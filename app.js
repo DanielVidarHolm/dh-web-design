@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     });
 })
 
+app.get('/about-me', (req, res)=> {
+    res.render('pages/about.html')
+})
+
 app.listen(PORT, () => {
     console.log(`Running on Port ${PORT} Better go catch it`)
 })
